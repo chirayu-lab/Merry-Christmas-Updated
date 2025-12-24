@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas 🎄 & Happy New Year</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+
+    
+</head>
+<link rel="icon" type="image/png" href="favicon.png">
+
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="Fifth Harmony - All I Want for Christmas Is You.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Snow Canvas -->
+    <canvas id="snow"></canvas>
+
+    <!-- Floating Decorations -->
+    <div class="decorations">
+        <span class="ornament" style="--delay: 0s; --x: 10%;">🎄</span>
+        <span class="ornament" style="--delay: 1s; --x: 25%;">⭐</span>
+        <span class="ornament" style="--delay: 2s; --x: 40%;">🎅</span>
+        <span class="ornament" style="--delay: 0.5s; --x: 55%;">🦌</span>
+        <span class="ornament" style="--delay: 1.5s; --x: 70%;">🎁</span>
+        <span class="ornament" style="--delay: 2.5s; --x: 85%;">❄️</span>
+    </div>
+
+    <!-- 3D Card -->
+    <div class="card-container">
+        <div class="card" id="card">
+            <!-- Card Glow -->
+            <div class="card-glow"></div>
+            
+            <!-- Card Content -->
+            <div class="card-content">
+                <!-- Top Decoration -->
+                <div class="top-decoration">
+                    <span class="star">⭐</span>
+                </div>
+
+                <!-- Main Title -->
+                <h1 class="title">
+                    <span class="line line-1">Merry</span>
+                    <span class="line line-2">Christmas</span>
+                </h1>
+
+                <!-- Divider -->
+                <div class="divider">
+                    <span class="snowflake">❄️</span>
+                    <span class="line-dec"></span>
+                    <span class="snowflake">❄️</span>
+                </div>
+
+                <!-- Secondary Title -->
+                <h2 class="subtitle-main">
+                    <span>&</span>
+                    <span>Happy New Year</span>
+                    <span class="year">2026 (SOON!..)</span>
+                </h2>
+
+                <!-- Message -->
+                <p class="message">May your days be merry & bright ✨</p>
+
+                <!-- Gift Button -->
+                <button class="gift-btn" onclick="playMusic()">
+                    <span class="gift-icon">🎁</span>
+                    <span class="gift-text">Tap for Magic</span>
+                </button>
+
+                <!-- Bottom Decoration -->
+                <div class="bottom-decoration">
+                    <span>🎄</span>
+                    <span>🦌</span>
+                    <span>🎅</span>
+                    <span>🦌</span>
+                    <span>🎄</span>
+                </div>
+            </div>
+
+            <!-- Card Shine Effect -->
+            <div class="card-shine"></div>
+        </div>
+    </div>
+
+    <!-- Particles -->
+    <div class="particles" id="particles"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
